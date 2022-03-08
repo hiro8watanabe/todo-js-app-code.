@@ -1,6 +1,6 @@
-# gulp-starter
+# gulp_baseテンプレート
 
-gulp で FLOCSS × Dart Sass のコーディングをするためのスターターキット。
+gulp で Dart Sass & FLOCSS を使用したHTMLコーディングのBASEテンプレート。
 
 Git のリポジトリをコピー後、ターミナルで以下のコマンドを実行。
 
