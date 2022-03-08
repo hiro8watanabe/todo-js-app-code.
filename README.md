@@ -4,24 +4,15 @@ gulp で Dart Sass & FLOCSS を使用したHTMLコーディングのBASEテン�
 
 Git のリポジトリをコピー後、ターミナルで以下のコマンドを実行。
 
-`git clone https://github.com/traveler20/gulp-starter.git`
+`git clone https://github.com/hiro8watanabe/gulp_base.git`
 
 `npm install`
 
 `npx gulp`
 
-http://localhost:3000/
 
-大体こちらの URL にてローカルサーバーが立ち上がる。  
-HTML の編集や Sass のコンパイルに対して自動でリロードするようにも設定済み。
 
-詳細については[Zenn](https://zenn.dev/yurukei20/articles/f1f9b248fcf18b)で解説しています。
-
-https://zenn.dev/yurukei20/articles/f1f9b248fcf18b
-
-# 技術的な構成
-
-構成としては、以下のようなディレクトリになっています。
+# ディレクトリ構成
 
 ```
 docs
@@ -74,30 +65,8 @@ gulpfileに書いている機能としては大体以下の5つの機能。
 - ローカルサーバーの立ち上げ
 - 作業ファイルの監視（自動更新）
 
-個人的には、Dart Sassでコンパイルしてコーディングするたびに画面が更新されればいいなと思い作成したので、gulpfile.js は結構汚いかもです。
-もっとこうしたほうがいいよ！というのがあればディスカッション等で言ってもらえると幸いです。
-
 
 ## ファイル構成
-
-各ファイルの役割についてざっくり紹介します。
-多分、一般的なgulpファイルと同じような役割かと思います。
-
-### gulpfile.js
-
-上述した gulp の機能を記載しているファイルです。
-
-### docs
-
-コンパイル後の HTML や CSS（納品・デプロイするフォルダ）
-
-github pages の公開ディレクトリで docs を選択すると通常通り公開することも可能です。
-
-### src
-
-コーディング用の HTML や SCSS ファイル。
-
-`git clone`をしたらほとんどここしか触りませんでした。
 
 ### src/asset/sass
 
@@ -144,7 +113,7 @@ sass
 前提条件が整っていれば、以下のような流れで進めます。
 
 1. コーディングしたいファイルに `cd` コマンドで移動。
-2. `git clone https://github.com/traveler20/gulp-starter.git` を実行
+2. `git clone https://github.com/hiro8watanabe/gulp_base.git` を実行
 3. `npm install` を実行
 4. `npx gulp` を実行
 5. `src` 内でコーディング
@@ -153,7 +122,7 @@ sass
 まずは、gitをcloneします。
 
 ```
-git clone https://github.com/traveler20/gulp-starter.git
+git clone https://github.com/hiro8watanabe/gulp_base.git
 ``` 
 
 ファイルが生成されるので、`npm install` で `node_module` など必要なファイルをインストールしましょう。
