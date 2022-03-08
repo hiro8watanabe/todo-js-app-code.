@@ -59,7 +59,9 @@ const cssSass = () => {
     mqpacker(),
     autoprefixer(),
     cssDeclarationSorter({
-      //alphabetically・アルファベット順 / smacss・重要なプロパティ順 / concentric css・ボックスモデルの外から内
+      // alphabetically・アルファベット順
+      // smacss・重要なプロパティ順
+      // concentric css・ボックスモデルの外から内
       order: "smacss",
     })
   ];
