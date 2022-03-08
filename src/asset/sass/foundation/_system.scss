@@ -1,0 +1,92 @@
+/* system
+--------------------------- */
+
+
+//マップ型変数breakpointsを定義
+$breakpoints: (
+  //キー値
+  "sm": "screen and (max-width: 576px)",
+  "md": "screen and (max-width: 768px)",
+  "lg": "screen and (max-width: 992px)",
+  "xl": "screen and (max-width: 1200px)"
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: md) {
+  //map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+// pxをvw変換 引数にカンプのpxを入れる
+$baseWidth : 1366;
+@function vw($pixelsVw) {
+    @return $pixelsVw / $baseWidth * 100vw;
+  }
+
+// color system
+// ---------------------
+// $c-base: #efefef;
+// $c-base-sub: #fff;
+// $c-body: #333;
+// $c-accent: #ca6060;
+
+// $c-light: #ccc; // header
+// $c-dark: #222; // footer
+
+// // dark mode
+// $c-base: #333;
+// $c-base-sub: #222;
+// $c-body: #fff;
+// $c-accent: #ca6060;
+
+// transition
+// ---------------------
+@mixin transition-base($second: 0.4s) {
+    transition: all $second;
+}
+
+// // content max-width
+// // ---------------------
+// @mixin content-maxwidth($px: 1200px) {
+//     max-width: $px;
+// }
+
+// font system
+// ---------------------
+// @mixin garamond($weight: bold) {
+//     font-family: "Cormorant Garamond", serif;
+//     font-weight: $weight;
+// }
+
+// Google Font Awesome
+// ---------------------
+
+
+// responsive system
+// ---------------------
+// @mixin breakpoint($point) {
+//     @if $point == tablet {
+//         @media (min-width: 640px) {
+//             @content;
+//         }
+//     }
+//     @if $point == pc {
+//         @media (min-width: 890px) {
+//             @content;
+//         }
+//     }
+// }
+
+// .pc-only {
+//     display: none;
+// }
+// @include breakpoint(tablet) {
+// }
+// @include breakpoint(pc) {
+//     .pc-only {
+//         display: inline-block;
+//     }
+// }
