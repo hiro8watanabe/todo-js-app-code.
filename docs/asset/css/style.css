@@ -1,0 +1,157 @@
+/*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.min.css */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+h2 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  vertical-align: middle;
+}
+
+button,
+[type=button] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled {
+  cursor: default;
+}
+
+summary {
+  display: list-item;
+}
+
+/* system
+--------------------------- */
+.todo {
+  color: #666;
+}
+.todo__inner {
+  width: 95%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.todo__input-area {
+  margin: 0 auto;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: #c1ffff;
+}
+.todo__input {
+  margin-right: 12px;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  background-color: #fff;
+}
+.todo__btn {
+  margin-right: 8px;
+  padding: 4px 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #edecec;
+  transition: 0.3s;
+}
+.todo__btn:hover {
+  background-color: #1e3eb4;
+  color: #fff;
+}
+.todo__section-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.todo__incomplete-area {
+  min-height: 200px;
+  margin: 8px auto;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+}
+.todo__complete-area {
+  min-height: 200px;
+  margin: 8px auto;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: #eafcda;
+}
+.todo__title {
+  margin-right: 16px;
+}
+.todo__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.todo__title {
+  flex: 1;
+}
+.todo__btn-wrap {
+  width: 100%;
+  max-width: 150px;
+}
+
+/*--------------------------------------*
+ * foundation
+ *--------------------------------------*/
+/*--------------------------------------*
+ * layout
+ *--------------------------------------*/
+/*--------------------------------------*
+ * object
+ *--------------------------------------*/
+/*-------------------
+ * component
+-------------------*/
+/*-------------------
+ * project
+-------------------*/
+/*-------------------
+ * object
+-------------------*/
+/*# sourceMappingURL=style.css.map */

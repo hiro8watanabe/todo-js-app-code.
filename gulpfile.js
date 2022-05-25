@@ -63,7 +63,7 @@ const cssSass = () => {
       // smacss・重要なプロパティ順
       // concentric css・ボックスモデルの外から内
       order: "smacss",
-    })
+    }),
   ];
 
   return (
@@ -100,17 +100,19 @@ const cssSass = () => {
  * js
  */
 const js = () => {
-  return gulp
-    .src(srcPath.js)
-    .pipe(
-      //エラーが出ても処理を止めない
-      plumber({
-        errorHandler: notify.onError("Error:<%= error.message %>"),
-      })
-    )
-    .pipe(uglify())
-    .pipe(gulp.dest(docsPath.js))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src(srcPath.js)
+      .pipe(
+        //エラーが出ても処理を止めない
+        plumber({
+          errorHandler: notify.onError("Error:<%= error.message %>"),
+        })
+      )
+      // .pipe(uglify())
+      .pipe(gulp.dest(docsPath.js))
+      .pipe(browserSync.stream())
+  );
 };
 
 /**

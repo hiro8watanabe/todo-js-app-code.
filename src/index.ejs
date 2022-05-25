@@ -8,19 +8,57 @@
   <body>
     <%- include('./_component/_header'); %>
 
-      <main role="main">
-        <section class="mv"></section>
-
-        <section class=""></section>
-
-        <section class=""></section>
-
-        <section class=""></section>
-
-        <section class=""></section>
-      </main>
-    <footer>
-      <%- include('./_component/_footer'); %>
-    </footer>
+    <section class="todo">
+      <div class="todo__inner">
+        <div class="todo__input-area">
+          <input
+            id="js-add__txt"
+            class="todo__input"
+            type="text"
+            placeholder="TODOを入力"
+          />
+          <button id="js-add__btn" class="todo__btn">追加</button>
+        </div>
+        <div class="todo__incomplete-area">
+          <h2 class="todo__section-title">TODO</h2>
+          <ul id="js-incomplete__lists">
+            <li class="todo__list">
+              <p class="todo__title">TODOを入力</p>
+              <div class="todo__btn-wrap">
+                <button class="todo__btn">完了</button>
+                <button class="todo__btn">削除</button>
+              </div>
+            </li>
+            <li class="todo__list">
+              <h2 class="todo__title">TODOを入力</h2>
+              <div class="todo__btn-wrap">
+                <button class="todo__btn">完了</button>
+                <button class="todo__btn">削除</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="todo__complete-area">
+          <p class="todo__section-title">COMPLETE!!</p>
+          <ul id="js-complete__lists">
+            <li class="todo__list">
+              <p class="todo__title">完了したTODO</p>
+              <div class="todo__btn-wrap">
+                <button class="todo__btn">戻す</button>
+                <button class="todo__btn">削除</button>
+              </div>
+            </li>
+            <li class="todo__list">
+              <p class="todo__title">完了したTODO</p>
+              <div class="todo__btn-wrap">
+                <button class="todo__btn">戻す</button>
+                <button class="todo__btn">削除</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer><%- include('./_component/_footer'); %></footer>
   </body>
 </html>
