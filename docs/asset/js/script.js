@@ -100,16 +100,17 @@ const createIncompleteList = (text) => {
     // deleteFromIncompleteList(li);
   });
 
+  const incompleteDeleteButton = document.createElement("button");
   //liタグの子要素に各要素を設定
   li.appendChild(p);
   li.appendChild(div);
   div.appendChild(completeButton);
-  div.appendChild(deleteButton);
+  div.appendChild(incompleteDeleteButton);
   //未完了リストに追加
   document.getElementById("js-incomplete__lists").appendChild(li);
 
   //button(削除)生成
-  const incompleteDeleteButton = document.createElement("button"); //ここのdeleteButton は名前変える
+
   incompleteDeleteButton.className = "todo__btn";
   incompleteDeleteButton.innerText = "削除";
   incompleteDeleteButton.addEventListener("click", () => {
