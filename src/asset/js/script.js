@@ -28,7 +28,7 @@ const deleteFromCompleteList = (li) => {
 const createIncompleteList = (text) => {
   //li生成
   const li = document.createElement("li");
-  li.setAttribute("id", "js-todo__list1");
+  li.setAttribute("id", "js-todo__list");
   li.className = "todo__list";
 
   //p生成
